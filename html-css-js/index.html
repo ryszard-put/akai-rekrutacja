@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AKAI Frontend Task</title>
+    <link rel="stylesheet" type="text/css" href="css/form.css" />
+    <meta
+      name="viewport"
+      charset="utf-8"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
+    />
+  </head>
+  <body>
+    <div class="error-container">
+      <h3>Czegoś brakuje :(</h3>
+    </div>
+    <div class="container">
+      <section id="task-frontend">
+        <img class="akai-logo" src="./img/logo.svg" alt="akai-logo" />
+        <h2 class="basic-title">Dołącz do nas!</h2>
+        <form autocomplete="off" method="POST" id="akai-form">
+          <div class="input-container">
+            <input type="text" name="imie" class="input" required />
+            <span class="floating-label">Imię</span>
+          </div>
+          <div class="input-container">
+            <input type="text" name="nazwisko" class="input" required />
+            <span class="floating-label">Nazwisko</span>
+          </div>
+          <div class="input-container">
+            <input type="text" name="email" class="input" required />
+            <span class="floating-label">E-mail</span>
+          </div>
+          <h2 class="section-title">Wybierz sekcje</h2>
+          <div class="section-container">
+            <div class="section-item">
+              <input
+                class="section-input"
+                type="checkbox"
+                name="section"
+                value="frontend"
+              />
+              <span class="section-label">Frontend</span>
+            </div>
+            <div class="section-item">
+              <input
+                class="section-input"
+                type="checkbox"
+                name="section"
+                value="backend"
+              />
+              <span class="section-label">Backend</span>
+            </div>
+            <div class="section-item">
+              <input
+                class="section-input"
+                type="checkbox"
+                name="section"
+                value="mobile"
+              />
+              <span class="section-label">Mobile</span>
+            </div>
+            <div class="section-item">
+              <input
+                class="section-input"
+                type="checkbox"
+                name="section"
+                value="grafika"
+              />
+              <span class="section-label">Grafika</span>
+            </div>
+          </div>
+          <button class="form-button" type="submit">Prześlij</button>
+        </form>
+      </section>
+    </div>
+    <script src="./js/validation.js"></script>
+  </body>
+</html>

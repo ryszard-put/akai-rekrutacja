@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,600,700&display=swap&subset=latin-ext');
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: rgb(250, 162, 27);
+  background: linear-gradient(
+    159deg,
+    rgba(250, 162, 27, 1) 0%,
+    rgba(250, 162, 27, 1) calc(15% - 1px),
+    rgba(255, 255, 255, 1) 15%,
+    rgba(255, 255, 255, 1) calc(85% - 1px),
+    rgba(250, 162, 27, 1) 85%,
+    rgba(250, 162, 27, 1) 100%
+  );
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  padding: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#task-frontend {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.basic-title {
+  padding: 30px;
+  font-size: 30px;
+}
+
+.akai-logo {
+  width: 70px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.input-container .input {
+  font-size: 16px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 300px;
+  border: none;
+  border-bottom: 1px solid #757575;
+}
+
+.input-container .input:focus {
+  outline: none;
+  border-color: #faa21b;
+}
+
+.input-container .input:valid {
+  border-color: #faa21b;
+}
+
+.input-container .floating-label {
+  color: #999;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+}
+
+.input-container .input:focus ~ .floating-label,
+.input-container .input:valid ~ .floating-label {
+  top: -20px;
+  font-size: 14px;
+  color: #faa21b;
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: -15px;
+}
+
+.section-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-container .section-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+}
+
+.section-item .section-label {
+  color: black;
+  transition: all 0.1s ease-in;
+}
+
+.section-item .section-input:checked ~ .section-label {
+  color: #ff9900;
+}
+
+.form-button {
+  background-color: transparent;
+  border: 2px solid #faa21b;
+  font-size: 20px;
+  padding: 10px 25px;
+  margin: 20px auto 0;
+  color: #faa21b;
+  font-weight: 600;
+  transition: all 0.1s ease-in;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.form-button:hover {
+  color: #ffe9d0;
+  background-color: #faa21b;
+}
+
+.error-container {
+  position: absolute;
+  width: 350px;
+  -webkit-box-shadow: 0px 2px 40px -5px rgba(0, 0, 0, 0.53);
+  -moz-box-shadow: 0px 2px 40px -5px rgba(0, 0, 0, 0.53);
+  box-shadow: 0px 2px 40px -5px rgba(0, 0, 0, 0.53);
+  padding: 1.2rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(-100%);
+  background-color: white;
+  transition: all 0.1s linear;
+}
+
+.error-container.active {
+  transform: translateY(20%);
+}
