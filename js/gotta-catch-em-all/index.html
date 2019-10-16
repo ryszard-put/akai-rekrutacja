@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="background-image"></div>
+    <main>
+      <section class="filters">
+        <h1>Pokedex</h1>
+        <form id="form-filters">
+          <div class="labels-container">
+            <label class="filter-option">
+              <input id="grass" type="checkbox" checked />
+              <span class="filter-name">
+                grass
+              </span>
+            </label>
+            <label class="filter-option">
+              <input id="poison" type="checkbox" checked />
+              <span class="filter-name">
+                poison
+              </span>
+            </label>
+            <label class="filter-option">
+              <input id="fire" type="checkbox" checked />
+              <span class="filter-name">
+                fire
+              </span>
+            </label>
+            <label class="filter-option">
+              <input id="flying" type="checkbox" checked />
+              <span class="filter-name">
+                flying
+              </span>
+            </label>
+            <label class="filter-option">
+              <input id="bug" type="checkbox" checked />
+              <span class="filter-name">
+                bug
+              </span>
+            </label>
+            <label class="filter-option">
+              <input id="water" type="checkbox" checked />
+              <span class="filter-name">
+                water
+              </span>
+            </label>
+            <label class="filter-option">
+              <input id="normal" type="checkbox" checked />
+              <span class="filter-name">
+                normal
+              </span>
+            </label>
+            <label class="filter-option">
+              <input id="ground" type="checkbox" checked />
+              <span class="filter-name">
+                ground
+              </span>
+            </label>
+            <label class="filter-option">
+              <input id="electric" type="checkbox" checked />
+              <span class="filter-name">
+                electric
+              </span>
+            </label>
+            <label class="filter-option">
+              <input id="fairy" type="checkbox" checked />
+              <span class="filter-name">
+                fairy
+              </span>
+            </label>
+            <label class="filter-option">
+              <input id="fighting" type="checkbox" checked />
+              <span class="filter-name">
+                fighting
+              </span>
+            </label>
+            <label class="filter-option">
+              <input id="psychic" type="checkbox" checked />
+              <span class="filter-name">
+                psychic
+              </span>
+            </label>
+            <label class="filter-option">
+              <input id="rock" type="checkbox" checked />
+              <span class="filter-name">
+                rock
+              </span>
+            </label>
+            <label class="filter-option">
+              <input id="steal" type="checkbox" checked />
+              <span class="filter-name">
+                steal
+              </span>
+            </label>
+            <label class="filter-option">
+              <input id="ice" type="checkbox" checked />
+              <span class="filter-name">
+                ice
+              </span>
+            </label>
+            <label class="filter-option">
+              <input id="ghost" type="checkbox" checked />
+              <span class="filter-name">
+                ghost
+              </span>
+            </label>
+            <label class="filter-option">
+              <input id="dragon" type="checkbox" checked />
+              <span class="filter-name">
+                dragon
+              </span>
+            </label>
+          </div>
+          <div class="name-filter">
+            <input id="pokemon-name" type="text" placeholder="Pokemon name" />
+            <button class="search-button" type="submit">
+              Search
+            </button>
+          </div>
+        </form>
+      </section>
+      <section class="pokemons"></section>
+    </main>
+    <script src="./data.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
